@@ -1,0 +1,16 @@
+{
+    "name": "ceramicsoul",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "postcss-pxtorem": "^6.1.0",
+        "sass": "^1.97.2",
+        "vite": "^7.3.0"
+    }
+}
