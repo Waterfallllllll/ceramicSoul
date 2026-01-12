@@ -1,8 +1,9 @@
 @use "/src/sass/base/variables.sass" as *
 
 .header
-    display: flex
-    justify-content: space-between
+    &__top
+        display: flex
+        justify-content: space-between
     &__burger
         display: flex
         flex-direction: column
@@ -27,3 +28,25 @@
                 width: 20px
                 height: 20px
                 color: $Dark
+
+@media screen and (min-width: 768px)
+    .header
+        &__burger
+            visibility: hidden
+        &__nav
+            margin-top: 20px
+            ul
+                display: flex
+                padding-left: 0
+                justify-content: center
+                gap: 30px
+                li
+                    list-style-type: none
+        &__link
+            color: $Dark
+            font-style: Regular
+            font-size: 20px
+            font-weight: 400
+            line-height: 24px
+            text-transform: uppercase
+            text-decoration: none
