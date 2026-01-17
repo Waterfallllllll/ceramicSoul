@@ -37,11 +37,13 @@
     .promo
         &__potter
             display: block
-            width: 450px
+            width: clamp(450px, 37.5vw, 640px)
+            // сколько процентов занимает 450 пикселей от 1200 = 37.5%
             height: 633px
             position: absolute
             top: 0
             left: 0
+            object-fit: cover
         &__title
             padding-left: 571px
 
@@ -55,3 +57,12 @@
             height: 460px
         &__btn
             margin: 50px auto 0 auto
+        &__title
+            padding-left: 642px
+            padding-top: 384px
+        &__potter
+            height: 900px
+
+    //1920-1440=480
+    //480/2=240
+    //882-240=642
