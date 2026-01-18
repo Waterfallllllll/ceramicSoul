@@ -12,5 +12,9 @@
         "postcss-pxtorem": "^6.1.0",
         "sass": "^1.97.2",
         "vite": "^7.3.0"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.18",
+        "tailwindcss": "^4.1.18"
     }
 }
