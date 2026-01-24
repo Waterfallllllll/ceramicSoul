@@ -8,8 +8,29 @@
     line-height: 24px
     font-size: 20px
 
+.btn-send
+    width: 220px
+    height: 40px
+    color: $Dark
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+    text-align: center
+    text-transform: uppercase
+    border: 1px solid $Dark
+    border-radius: 2px
+    &:hover
+        color: $Ceramic
+        border-color: $Ceramic
+    &:active
+        color: $Dark
+        border-color: $Ceramic
+    &:disabled
+        color: $ui-disabled
+        border-color: $ui-disabled
+
 @media screen and (min-width: 1200px)
-    .btn-default
+    .btn-defaulth
         &:hover
             background-color: $Dark
             color: $Light
