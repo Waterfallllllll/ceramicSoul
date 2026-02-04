@@ -90,18 +90,25 @@
                 <img src="src/img/homePage/getInTouch/tea.jpg" alt="tea" class="form__img">
                 <div class="form__wrapper">
                     <div class="form__input-wrapper 2xl:grid 2xl:grid-cols-2 2xl:gap-x-[45px]">
-                        <div class="form__input-name">
-                            <div class="form__input-title">Name</div>
-                            <input type="text" placeholder="Name" class="input form__name">
-                        </div>
-                        <div class="form__input-email">
-                            <div class="form__input-title">Email</div>
-                            <input type="text" placeholder="Email" class="input form__email">
-                        </div>
-                        <div class="form__input-question">
-                            <div class="form__input-title">Your question</div>
-                            <input type="text" placeholder="Question" class="input-question form__your-question">
-                        </div>
+                        <form action="#">
+                            <fieldset>
+                                <div class="form__input-block">
+                                    <label for="name" class="form__input-title">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Name"
+                                        class="input form__name">
+                                </div>
+                                <div class="form__input-block">
+                                    <div for="email" class="form__input-title">Email</div>
+                                    <input type="email" id="email" name="email" placeholder="Email"
+                                        class="input form__email">
+                                </div>
+                                <div class="form__input-block">
+                                    <div class="form__input-title">Your question</div>
+                                    <input type="text" placeholder="Question"
+                                        class="input-question form__your-question">
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                     <div class="form__checkbox-wrapper">
                         <input type="checkbox" class="form__checkbox">
