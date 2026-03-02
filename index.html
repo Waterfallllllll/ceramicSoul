@@ -135,9 +135,7 @@
                             <form action="#">
                                 <fieldset class="form__fieldset">
                                     <div class="form__input-block">
-                                        <label
-                                            for="name"
-                                            class="form__input-title"
+                                        <label for="name" class="form__label"
                                             >Name</label
                                         >
                                         <input
@@ -145,27 +143,33 @@
                                             id="name"
                                             name="name"
                                             placeholder="Name"
-                                            class="input form__name"
+                                            class="form__input"
                                         />
-                                    </div>  
+                                    </div>
                                     <div class="form__input-block">
-                                        <div
-                                            for="email"
-                                            class="form__input-title"
-                                        >
+                                        <label for="email" class="form__label">
                                             Email
-                                        </div>
+                                        </label>
                                         <input
                                             type="email"
                                             id="email"
                                             name="email"
                                             placeholder="Email"
-                                            class="input form__email"
+                                            class="form__input"
                                         />
                                     </div>
                                     <div class="form__input-block">
-                                        <label for="question">Your question</label>
-                                        <textarea name="question" id="question" class="input-question form__your-question"></textarea>
+                                        <label
+                                            class="form__label"
+                                            for="question"
+                                            >Your question</label
+                                        >
+                                        <textarea
+                                            name="question"
+                                            id="question"
+                                            class="form__textarea"
+                                            placeholder="Question"
+                                        ></textarea>
                                     </div>
                                 </fieldset>
                             </form>
