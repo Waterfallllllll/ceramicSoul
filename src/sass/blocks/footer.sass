@@ -4,13 +4,13 @@
     margin-top: 95px
     background: $Dark
     padding: 50px 0
-    &__titles
-        color: $Light
-        font-size: 16px
-        font-weight: 500
-        line-height: 19px
-        text-transform: uppercase
     &__newsletter
+        &-title
+            color: $Light
+            font-size: 16px
+            font-weight: 500
+            line-height: 19px
+            text-transform: uppercase
         &-description
             color: $Light
             font-size: 16px
@@ -49,7 +49,7 @@
                 &::after
                     content: ""
                     position: absolute
-                    left: 5px
+                    left: 15px
                     width: 5px
                     height: 10px
                     border: solid white
@@ -57,3 +57,52 @@
                     transform: rotate(45deg)
         &-btn
             margin-top: 20px
+    &__navigation
+        &-wrapper
+            display: flex
+            flex-wrap: wrap
+            margin-top: 40px
+        &-block
+            margin: 0 66px 40px 0
+    &__link
+        color: $Light
+        font-size: 16px
+        font-weight: 400
+        line-height: 19px
+        margin-bottom: 20px
+    &__titles
+        color: $Light
+        font-size: 16px
+        font-weight: 500
+        line-height: 19px
+        text-transform: uppercase
+        margin-bottom: 40px
+    &__icons
+        color: $Light
+        width: 92px
+        display: flex
+        justify-content: space-between
+    &__copyright
+        color: $Light
+        font-size: 14px
+        font-weight: 400
+        line-height: 17px
+        text-align: center
+        margin-top: 42px
+
+@media screen and (min-width: 768px)
+    .footer
+        &__wrapper-navigation-links
+            display: flex
+            justify-content: space-between
+            margin-top: 40px
+        &__navigation
+            &-block
+                margin: 0 66px 0 0
+            &-wrapper
+                margin-top: 0
+        &__newsletter
+            &-checkbox
+                &:checked
+                    &::after
+                        left: 5px

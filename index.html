@@ -245,12 +245,12 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__newsletter-wrapper">
-                    <h3 class="footer__titles">newsletter</h3>
+                    <h3 class="footer__newsletter-title">newsletter</h3>
                     <p class="footer__newsletter-description">
                         Keep up to date with news and promotions
                     </p>
                     <form action="#">
-                        <fieldset>      
+                        <fieldset>
                             <input
                                 type="email"
                                 name="email"
@@ -259,7 +259,10 @@
                                 required
                             />
                         </fieldset>
-                        <label for="footer__checkbox" class="footer__newsletter-check-block">
+                        <label
+                            for="footer__checkbox"
+                            class="footer__newsletter-check-block"
+                        >
                             <input
                                 class="footer__newsletter-checkbox"
                                 type="checkbox"
@@ -268,34 +271,40 @@
                             />
                             I agree with the <a href="#">terms</a>
                         </label>
-                        <button type="submit" class="btn-submit footer__newsletter-btn">
+                        <button
+                            type="submit"
+                            class="btn-submit footer__newsletter-btn"
+                        >
                             submit
                         </button>
                     </form>
                 </div>
-                <div class="footer__navigation-wrapper">
-                    <div class="footer__discover">
-                        <h3 class="footer__titles">discover</h3>
-                        <div class="footer__link">About Us</div>
-                        <div class="footer__link">Blog</div>
+                <div class="footer__wrapper-navigation-links">
+                    <div class="footer__navigation-wrapper">
+                        <div class="footer__navigation-block">
+                            <h3 class="footer__titles">discover</h3>
+                            <div class="footer__link"><a href="#">About Us</a></div>
+                            <div class="footer__link"><a href="#">Blog</a></div>
+                        </div>
+                        <div class="footer__navigation-block">
+                            <h3 class="footer__titles">shopping</h3>
+                            <div class="footer__link"><a href="#">Catalog</a></div>
+                        </div>
+                        <div class="footer__navigation-block">
+                            <h3 class="footer__titles">information</h3>
+                            <div class="footer__link"><a href="#">Terms and Conditions</a></div>
+                        </div>
                     </div>
-                    <div class="footer__shopping">
-                        <h3 class="footer__titles">shopping</h3>
-                        <div class="footer__link">Catalog</div>
-                    </div>
-                    <div class="footer__shopping">
-                        <h3 class="footer__titles">information</h3>
-                        <div class="footer__link">Terms and Conditions</div>
+                    <div class="footer__links-wrapper">
+                        <h3 class="footer__titles">follow us</h3>
+                        <div class="footer__icons">
+                            <a href="#"><span class="icon-facebook"></span></a>
+                            <a href="#"><span class="icon-instagram"></span></a>
+                            <a href="#"><span class="icon-pinterest"></span></a>
+                        </div>
                     </div>
                 </div>
-                <div class="footer__links-wrapper">
-                    <h3 class="footer__titles">follow us</h3>
-                    <div class="footer__icons">
-                        <span class="icon-facebook"></span>
-                        <span class="icon-instagram"></span>
-                        <span class="icon-pinterest"></span>
-                    </div>
-                </div>
+                <div class="footer__copyright">© Copyright 2025, Ceramic soul</div>
             </div>
         </footer>
         <script type="module" src="/src/js/script.js"></script>
