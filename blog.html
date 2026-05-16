@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <title>Blog</title>
+    </head>
+    <body>
+        <section class="blog">
+            <div class="container">
+                <header class="header">
+                    <div class="header__menu">
+                        <div class="header__menu-close">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="header__menu-nav">
+                            <ul>
+                                <li>
+                                    <a href="#" class="header__menu-link"
+                                        >catalog</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link"
+                                        >blog</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link"
+                                        >about</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__top">
+                        <div class="header__burger">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <a href="#" class="header__logo"
+                            ><img src="/src/icons/logo/logo.png" alt="logo"
+                        /></a>
+                        <div class="header__icons">
+                            <a href="#"><span class="icon-search"></span></a>
+                            <a href="#"
+                                ><span class="icon-shopping-bag"></span
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="header__nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="header__link">catalog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">about</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <h1 class="title-h1 blog__title">our digital notes</h1>
+                <div class="blog__wrapper">
+                    <div class="blog__card">
+                        <div class="blog__data">
+                            <div class="grid grid-cols-1 md:grid-cols-2">
+                                <img
+                                    src="src/img//homePage/getInTouch/tea.jpg"
+                                    alt="tea"
+                                />
+                                <div class="flex flex-col">
+                                    <h3 class="title-h3 blog__title-h3">pottery secrets</h3>
+                                    <button class="btn-read md:col-start-2">
+                                        read
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__text">
+                            Discover the timeless art of pottery and unlock the
+                            secrets hidden in every curve and glaze. From
+                            mastering the perfect wheel technique to
+                            understanding how clay transforms in the kiln, each
+                            step reveals a blend of tradition and creativity.
+                            The true magic lies in the details—subtle textures,
+                            natural imperfections, and the unique touch of the
+                            artisan’s hand, turning simple earth into lasting
+                            beauty.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__newsletter-wrapper">
+                        <h3 class="footer__newsletter-title">newsletter</h3>
+                        <p class="footer__newsletter-description">
+                            Keep up to date with news and promotions
+                        </p>
+                        <form action="#">
+                            <fieldset>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Enter your e-mail"
+                                    class="footer__newsletter-email"
+                                    required
+                                />
+                            </fieldset>
+                            <label
+                                for="footer__checkbox"
+                                class="footer__newsletter-check-block"
+                            >
+                                <input
+                                    class="footer__newsletter-checkbox"
+                                    type="checkbox"
+                                    id="footer__checkbox"
+                                    required
+                                />
+                                I agree with the <a href="#">terms</a>
+                            </label>
+                            <button
+                                type="submit"
+                                class="btn-submit footer__newsletter-btn"
+                            >
+                                submit
+                            </button>
+                        </form>
+                    </div>
+                    <div
+                        id="navigation-wrapper"
+                        class="footer__navigation-wrapper"
+                    >
+                        <div class="footer__navigation-block">
+                            <h3 class="footer__titles">discover</h3>
+                            <nav>
+                                <ul>
+                                    <li class="footer__link">
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li class="footer__link">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__navigation-block">
+                            <h3 class="footer__titles">shopping</h3>
+                            <nav>
+                                <ul>
+                                    <li class="footer__link">
+                                        <a href="#">Catalog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__navigation-block">
+                            <h3 class="footer__titles">information</h3>
+                            <nav>
+                                <ul>
+                                    <li class="footer__link">
+                                        <a href="#">Terms and Conditions</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__links-wrapper">
+                        <h3 class="footer__titles">follow us</h3>
+                        <div class="footer__icons">
+                            <a href="#"><span class="icon-facebook"></span></a>
+                            <a href="#"><span class="icon-instagram"></span></a>
+                            <a href="#"><span class="icon-pinterest"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    © Copyright 2025, Ceramic soul
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="/src/js/script.js"></script>
+    </body>
+</html>

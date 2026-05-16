@@ -33,6 +33,16 @@
         color: $ui-disabled
         border-color: $ui-disabled
 
+.btn-read
+    @include button
+    width: 145px
+    height: 32px
+    font-size: 14px
+    &:focus
+        color: $Dark
+        outline: 1px solid $Ceramic
+        border: none
+
 @media screen and (min-width: 1200px)
     .btn-defaulth
         &:hover
@@ -44,6 +54,14 @@
             color: $Dark
             border: none
     .btn-send
+        &:hover
+            color: $Ceramic
+            border: 1px solid $Ceramic
+        &:active
+            color: $Dark
+            outline: 1px solid $Ceramic
+            border: none
+    .btn-read
         &:hover
             color: $Ceramic
             border: 1px solid $Ceramic
