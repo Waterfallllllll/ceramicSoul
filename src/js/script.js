@@ -8,17 +8,17 @@ import "/src/css/tailwind.css";
 import "/src/sass/style.sass";
 
 const burger = document.querySelector(".header__burger"),
-	close = document.querySelector(".header__menu-close"),
-	menu = document.querySelector(".header__menu");
+    close = document.querySelector(".header__menu-close"),
+    menu = document.querySelector(".header__menu");
 
 burger.addEventListener("click", () => {
-	menu.classList.add("header__menu_active");
-	document.body.style.overflow = "hidden";
+    menu.classList.add("header__menu_active");
+    document.body.style.overflow = "hidden";
 });
 
 close.addEventListener("click", () => {
-	menu.classList.remove("header__menu_active");
-	document.body.style.overflow = "";
+    menu.classList.remove("header__menu_active");
+    document.body.style.overflow = "";
 });
 
 try {
@@ -43,28 +43,26 @@ try {
                 slidesPerView: 3,
             },
         },
-        modules: [Navigation, Pagination]
+        modules: [Navigation, Pagination],
     });
-} catch (e) {
-
-}
+} catch (e) {}
 
 try {
-	const tabs = document.querySelectorAll(".catalog__tab");
-	const contents = document.querySelectorAll(".catalog__content-item");
+    const tabs = document.querySelectorAll(".catalog__tab");
+    const contents = document.querySelectorAll(".catalog__content-item");
 
-	tabs.forEach((tab, index) => {
-		tab.addEventListener("click", () => {
-			// Удаляем активный класс у всех табов и контента
-			tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
-			contents.forEach((c) => (c.style.display = "none"));
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            // Удаляем активный класс у всех табов и контента
+            tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+            contents.forEach((c) => (c.style.display = "none"));
 
-			// Добавляем активный класс к нажатому табу и показываем соответствующий контент
-			tab.classList.add("catalog__tab_active");
-			contents[index].style.display = "block";
-		});
-	});
+            // Добавляем активный класс к нажатому табу и показываем соответствующий контент
+            tab.classList.add("catalog__tab_active");
+            contents[index].style.display = "block";
+        });
+    });
 
-	// Показываем первый контент при загрузке
-	contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+    // Показываем первый контент при загрузке
+    contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
 } catch (e) {}

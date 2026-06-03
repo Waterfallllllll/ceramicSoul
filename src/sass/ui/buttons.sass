@@ -54,21 +54,9 @@
             color: $Dark
             border: none
     .btn-send
-        &:hover
-            color: $Ceramic
-            border: 1px solid $Ceramic
-        &:active
-            color: $Dark
-            outline: 1px solid $Ceramic
-            border: none
+        @include pseudo-btn-classes
     .btn-read
-        &:hover
-            color: $Ceramic
-            border: 1px solid $Ceramic
-        &:active
-            color: $Dark
-            outline: 1px solid $Ceramic
-            border: none
+        @include pseudo-btn-classes
 
 @media screen and (min-width: 1536px)
     .btn-default

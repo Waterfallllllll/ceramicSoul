@@ -19,3 +19,23 @@
     font-weight: 400
     text-transform: uppercase
     cursor: pointer
+
+@mixin angle-decoration
+    &::before
+        position: absolute
+        content: ""
+        width: 200px
+        height: 200px
+        border-left: 1px solid $Dark
+        border-top: 1px solid $Dark
+        top: 0px
+        left: 0px
+
+@mixin pseudo-btn-classes
+    &:hover
+        color: $Ceramic
+        border: 1px solid $Ceramic
+    &:active
+        color: $Dark
+        outline: 1px solid $Ceramic
+        border: none
