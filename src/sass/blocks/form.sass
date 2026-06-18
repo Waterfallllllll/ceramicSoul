@@ -2,6 +2,11 @@
 
 .form
     margin-top: 60px
+
+    .just-validate-error-field
+        border: none
+        outline: 1px solid $ui-error
+
     &__label
         display: block
         color: $Dark
@@ -98,6 +103,10 @@
             object-fit: cover
         &__wrapper
             padding-right: 250px
+        &__vase
+            animation-name: rotate360
+            animation-duration: 3s
+            animation-timing-function: ease-in-out
 
 @media screen and (min-width: 1536px)
     .form

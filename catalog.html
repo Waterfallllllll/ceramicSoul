@@ -58,13 +58,13 @@
                     <div class="header__nav">
                         <ul>
                             <li>
-                                <a href="#" class="header__link">catalog</a>
+                                <a href="./catalog.html" class="header__link">catalog</a>
                             </li>
                             <li>
-                                <a href="#" class="header__link">blog</a>
+                                <a href="./blog.html" class="header__link">blog</a>
                             </li>
                             <li>
-                                <a href="#" class="header__link">about</a>
+                                <a href="./about.html" class="header__link">about</a>
                             </li>
                         </ul>
                     </div>
@@ -217,15 +217,16 @@
             <div class="container">
                 <div class="footer__grid">
                     <div class="footer__newsletter-wrapper">
-                        <h3 class="footer__newsletter-title">newsletter</h3>
+                        <h2 class="footer__newsletter-title">newsletter</h2>
                         <p class="footer__newsletter-description">
                             Keep up to date with news and promotions
                         </p>
-                        <form action="#">
+                        <form class="footer__form" action="#">
                             <fieldset>
                                 <input
                                     type="email"
                                     name="email"
+                                    id="footer__email"
                                     placeholder="Enter your e-mail"
                                     class="footer__newsletter-email"
                                     required
@@ -243,6 +244,7 @@
                                 />
                                 I agree with the <a href="#">terms</a>
                             </label>
+                            <div class="checkbox-error-message"></div>
                             <button
                                 type="submit"
                                 class="btn-submit footer__newsletter-btn"
@@ -260,10 +262,10 @@
                             <nav>
                                 <ul>
                                     <li class="footer__link">
-                                        <a href="#">About Us</a>
+                                        <a href="/about.html">About Us</a>
                                     </li>
                                     <li class="footer__link">
-                                        <a href="#">Blog</a>
+                                        <a href="/blog.html">Blog</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -273,7 +275,7 @@
                             <nav>
                                 <ul>
                                     <li class="footer__link">
-                                        <a href="#">Catalog</a>
+                                        <a href="/catalog.html">Catalog</a>
                                     </li>
                                 </ul>
                             </nav>
